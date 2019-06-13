@@ -58,7 +58,13 @@ module.exports = {
         insertStyleSheetRule(`@keyframes move-top {${verticalTransforms.join(" ")}}`, 1);
 
         // Applying animations to elements.
-        insertStyleSheetRule(`#jounceMainDiv {position: absolute;animation-name: move-right; animation-duration: ${time}s;}`, 2);
-        insertStyleSheetRule(`#jounceSubDiv {position: absolute;animation-name: move-top; animation-duration: ${time}s;`, 3);
+        insertStyleSheetRule(
+            `#jounceMainDiv {position: absolute; animation-name: move-right; animation-duration: ${time}s; animation-fill-mode: forwards; }`,
+            2
+        );
+        insertStyleSheetRule(
+            `#jounceSubDiv {position: absolute; animation-name: move-top; animation-duration: ${time}s; animation-fill-mode: forwards;`,
+            3
+        );
     }
 }

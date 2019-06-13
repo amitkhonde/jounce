@@ -31,8 +31,8 @@ Bounce HTML elements using JavaScript
 ```
 * Import and initialize jounce
 ```
- import * as _ from 'jounce';
- 
+ import * as jounce from 'jounce';
+
  options = {
    noOfBounces: 3; // number of bounces for element default 2.
    time: 2; // duration of the animation. default 3.
