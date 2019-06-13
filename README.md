@@ -16,4 +16,30 @@ Bounce HTML elements using JavaScript
       </div>
   </div>
   ```
+* Add styles
+```
+.container {
+    position: relative;
+}
+.main-div {
+    position: absolute;
+}
 
+.sub-div {
+    position: absolute;
+}
+```
+* Import and initialize jounce
+```
+ import * as _ from 'jounce';
+ 
+ options = {
+   noOfBounces: 3; // number of bounces for element default 2.
+   time: 2; // duration of the animation. default 3.
+ }
+ jounce.init({ options })
+```
+* Bounce the element
+```
+jounce.animate();
+```
